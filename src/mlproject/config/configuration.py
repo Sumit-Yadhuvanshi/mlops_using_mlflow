@@ -1,10 +1,6 @@
-from src.mlproject.constants import *
+from src.mlproject.constants import CONFIG_FILE_PATH,PARAMS_FILE_PATH,SCHEMA_FILE_PATH
 from src.mlproject.utils.common import read_yaml, create_directories
-from src.mlproject.entity.config_entity import (DataIngestionConfig,
-                                            DataValidationConfig,
-                                            DataTransformationConfig,
-                                            ModelTrainerConfig,
-                                            ModelEvaluationConfig)
+from src.mlproject.entity.config_entity import DataIngestionConfig
 
 class ConfigurationManager:
     def __init__(
